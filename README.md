@@ -1,4 +1,4 @@
-### MLX90621 Arduino and Processing example code
+### MLX90621 Arduino and Processing example code : adaptation for ESP32
 
 Arduino and Processing code for the Melexis [MLX90621](http://www.melexis.com/Infrared-Thermometer-Sensors/Infrared-Thermometer-Sensors/Low-noise-high-speed-16x4-Far-Infrared-array-823.aspx) 16x4 thermopile array.
 
@@ -9,10 +9,11 @@ The MLX90621 FIRray temperature sensing device from Melexis utilizes the company
 In use in VU and Tilburg University temperature [cry detection project](http://www.pavlov.io/2015/07/01/detecting-crying-eyes/).
 
 Implements MaxBot's MLX90621 [Arduino library](http://forum.arduino.cc/index.php?topic=126244.0) patched with KMoto's [minor change](http://forum.arduino.cc/index.php?topic=126244.msg2307588#msg2307588) in defaultConfig_H.
-
-Also makes use of [nox771's i2c_t3 enhanced Teensy 3 Wire library](https://github.com/nox771/i2c_t3). This library allows a [Teensy 3.1](https://www.pjrc.com/store/teensy31.html) Arduino compatible USB development board to communicate with the MLX90621 over I2C/TWI.
+  Modified for ESP32
 
 TODO 2015-10-25: Refactor and clean up Processing visualizer.
+TODO : parameter when starting sensor, to choose I2C port : I2C1 / I2C0 / custom
+        Target is to grab multiple sensors on 1 ESP32
 
 ##### Screenshot
 
